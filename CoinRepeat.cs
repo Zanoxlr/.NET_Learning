@@ -8,36 +8,47 @@ namespace fkkt
     {
         public static void CoinRepeatMethod()
         {
-            int rnum = 0;
+            // set the variables
+            int randomNum = 0;
             int storeValue = 0;
             int countR = 0;
-            int asd = 0;
-
-            Console.WriteLine("0 al 1");
-            int countKovanc = Int32.Parse(Console.ReadLine());
-            Console.WriteLine("Koliko");
+            int roundCounterMatches = 0;
+            Random rnd = new Random();
+            // get the input data
+            Console.WriteLine("0 or 1");
+            int coinWantedValue = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("How many times do you want it to repeat? :");
             int countRound = Int32.Parse(Console.ReadLine());
 
             while (true)
             {
-                storeValue = rnum;
-                Random rnd = new Random();
-                rnum = rnd.Next(0, 2);
-                countR = countR + 1;
-
-                if ((countKovanc == rnum) && (rnum == storeValue))
+                // save the previous random number
+                storeValue = randomNum;
+                // set a random number 0 or 1
+                randomNum = rnd.Next(0, 2);
+                // increase the round counter
+                countR++;
+                // check if wanted coin value is the same
+                // as this and last rounds number 
+                if ((coinWantedValue == randomNum) && (randomNum == storeValue))
                 {
-                    if (asd > 10) { Console.WriteLine(asd); }
-                    asd = asd + 1;
-                    if (asd == countRound)
+                    // if the counter is over 10
+                    // write it to the console
+                    if (roundCounterMatches > 10) { Console.WriteLine(roundCounterMatches); }
+                    // increase the round counter matches by one
+                    roundCounterMatches++;
+                    // if the counter matches the rounds required 
+                    // it will write to the console and break the loop
+                    if (roundCounterMatches == countRound)
                     {
-                        Console.WriteLine("Uspelo je po {0} poskusih");
+                        Console.WriteLine("It took {0} trys",countR);
                         break;
                     }
                 }
                 else
                 {
-                    asd = 0;
+                    // restart the round couter
+                    roundCounterMatches = 0;
                 }
             }
         }

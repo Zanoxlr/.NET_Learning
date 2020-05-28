@@ -20,3 +20,5 @@ C:\Users\Zan\Documents\TheRacerGit\CSharp_Learning\obj\Debug\netcoreapp3.0\fkkt.
 C:\Users\Zan\Documents\TheRacerGit\CSharp_Learning\obj\Debug\netcoreapp3.0\fkkt.AssemblyInfo.cs
 C:\Users\Zan\Documents\TheRacerGit\CSharp_Learning\obj\Debug\netcoreapp3.0\fkkt.dll
 C:\Users\Zan\Documents\TheRacerGit\CSharp_Learning\obj\Debug\netcoreapp3.0\fkkt.pdb
+C:\Users\Zan\Documents\TheRacerGit\CSharp_Learning\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
+C:\Users\Zan\Documents\TheRacerGit\CSharp_Learning\obj\Debug\netcoreapp3.0\fkkt.csproj.CopyComplete

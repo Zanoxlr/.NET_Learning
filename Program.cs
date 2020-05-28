@@ -8,7 +8,7 @@ namespace fkkt
     {
         static void Main(string[] args)
         {
-            CoinRepeat.CoinRepeatMethod();
+            TextToMorse.TextToMorseMethod();
         }
     }
 }
