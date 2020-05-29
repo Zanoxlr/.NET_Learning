@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace fkkt
 {
-    class CoinRepeat
+    internal class CoinRepeat
     {
         public static void CoinRepeatMethod()
         {
@@ -29,7 +27,7 @@ namespace fkkt
                 // increase the round counter
                 countR++;
                 // check if wanted coin value is the same
-                // as this and last rounds number 
+                // as this and last rounds number
                 if ((coinWantedValue == randomNum) && (randomNum == storeValue))
                 {
                     // if the counter is over 10
@@ -37,11 +35,11 @@ namespace fkkt
                     if (roundCounterMatches > 10) { Console.WriteLine(roundCounterMatches); }
                     // increase the round counter matches by one
                     roundCounterMatches++;
-                    // if the counter matches the rounds required 
+                    // if the counter matches the rounds required
                     // it will write to the console and break the loop
                     if (roundCounterMatches == countRound)
                     {
-                        Console.WriteLine("It took {0} trys",countR);
+                        Console.WriteLine("It took {0} trys", countR);
                         break;
                     }
                 }
